@@ -158,12 +158,20 @@ body {
 .share__link{
   margin-top: .3em;
 }
-.button__share {
+.card__button__share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 3.5em;
   height: 3.5em;
   border-radius: 10em;
   background-color: var(--LightGrayishBlue);
   cursor: pointer;
+}
+
+.button__share {
+  width: 1.5em;
+  height: 1.5em;
 }
 
 
@@ -210,7 +218,7 @@ body {
     margin-left: 2em;
   }
   
-  .button__share {
+  .card__button__share {
     z-index: 1;
   }
 }
