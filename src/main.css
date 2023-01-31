@@ -75,19 +75,19 @@ body {
 
 .card__review {
   padding: 3.4em;
+  background-color: white;
 
 }
 
-.review{
-
-}
 .review__title{
   font-size: 2.2rem;
   font-weight: 700;
+  color: var(--VeryDarkGrayishBlue);
 }
 .review__description {
   margin-top: 1em;
   font-size: 1.4rem;
+  color: var(--DesaturatedDarkBlue);
 }
 
 .card__user {
@@ -162,21 +162,55 @@ body {
   width: 3.5em;
   height: 3.5em;
   border-radius: 10em;
-  background-color: hsla(212, 23%, 69%, 0.26);
+  background-color: var(--LightGrayishBlue);
   cursor: pointer;
 }
 
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 375px) {
   .card {
     display: flex;
     flex-direction: column;
     width: 90%;
-    max-height: 90%;
+    max-height: 95%;
   }
 
   .card__image {
     width: 100%;
+    background-position: center;
+  }
+  .image--hero {
+    width: 90vw;
   }
 
+  .card__review{
+    padding: 2.4em 3.4em 1.4em 3.4em;
+  }
+  .review__title {
+    font-size: 1.6rem;
+  }
+
+  .review__description {
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+    letter-spacing: .05rem;
+  }
+
+  .card__share {
+    justify-content: start;
+    position: absolute;
+    width: 90vw;
+    height: 6.5em;
+    right: 1.85em;
+    bottom: 1.25em;
+    border-radius: 0 0 0.8em 0.8em;
+  }
+
+  .share__link {
+    margin-left: 2em;
+  }
+  
+  .button__share {
+    z-index: 1;
+  }
 }
